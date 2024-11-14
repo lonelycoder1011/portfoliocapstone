@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li id="f1"><a href="index.html">Home</a></li>
+                <li id="f2"><a href="about.html">About</a></li>
+                <li id="f3"><a href="services.html">Services</a></li>
+            </ul>
+        </nav>
+    </header>  
+    
+    <main>
+        
+        <section class="home">
+            <div class="picture">
+            <!-- Placeholder for your picture -->
+            <img src="images/me.jpg" alt="My photo" id="profileImage">
+            </div>
+            <div class="intro">
+            <h1 id="newfont">Muhammad Ali Hasnain</h1>
+            <h2 id="f4">Front End Developer</h2>
+            <p>I am Muhammad Ali Hasnain. I am Beginner. I started my learning journey from the python. First of all I decided to learn the Python. So I joined the Python For Every body on the Coursera. That Python Specialization was taught by the Sir Chuck. It was the wonderful experience to learn python from Sir Chuck. His methodology of teaching, his practice quiz and Labs all were fantastic. I was zero before the joining of the course. And now I can write a small program related to the web scraping or management of the large data. <br>
+            So, after completing my Python Specialization, I deicided to learn Front End Development in detail and for that purpose I joined this Web Design Specialization to learn about the Front End Development. <br>
+            Moreover, it was also a exellent learning experience with Mam Colleen. She clear my basics of html, css and javacript. I learned responsive design and much more things from her. It was quite a wonderful experience to learn all that stuff.     
+            </p>
+            </div>
+        </section>
+        
+        <section class="order-query">
+            <h2 id="f5">Order Query</h2>
+            <form id="orderForm" onsubmit="return validateForm()">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    
+        <section class="map">
+            <h2 id="f6">Find Me</h2>
+            <!-- Embed a map from Google Maps or another provider -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d220732.73778330954!2d71.30984163742168!3d30.181449999272047!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x393b315778dea7d9%3A0xbad72fc74e55d42f!2sMultan%2C%20Punjab%2C%20Pakistan!5e0!3m2!1sen!2sus!4v1731611709985!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p id="f7">Connect with me</p>
+        <div class="social-icons">
+            <!-- Font Awesome CDN for Icons -->
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+              <!-- Buttons with Icons and Profile Links -->
+              <button onclick="window.location.href='https://www.linkedin.com/in/muhammad-ali-hasnain-7b186b266?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app'" class="social-button linkedin">
+                <i class="fab fa-linkedin"></i> LinkedIn
+              </button>
+              <button onclick="window.location.href='https://www.facebook.com/profile.php?id=100004132425189&mibextid=ZbWKwL'" class="social-button facebook">
+                 <i class="fab fa-facebook"></i> Facebook
+              </button>
+              <button onclick="window.location.href='https://www.instagram.com/muhammadalihasnain.official/profilecard/?igsh=MWdhY3ozc2JubjM5eg=='" class="social-button instagram">
+                <i class="fab fa-instagram"></i> Instagram
+              </button>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
